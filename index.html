@@ -33,19 +33,42 @@
   <header class="mb-8 md:mb-16 lg:mb-32 px-5" id="home">
     <!-- nav section start -->
     <section class="container mx-auto py-5 md:py-8 flex justify-between items-center">
-      <a class="font-semibold text-3xl sm:text-4xl text-zinc-700 order-1 lg:order-none" href="#home">ProLearner</a>
-      <nav class="flex items-center order-3 lg:order-none">
-        <ul class="space-x-10 items-center hidden lg:flex">
-          <li><a class="text-zinc-500 transition-colors duration-500 hover:text-black font-normal text-xl" href="#home">Home</a></li>
-          <li><a class="text-zinc-500 transition-colors duration-500 hover:text-black font-normal text-xl" href="#courses">Courses</a></li>
-          <li><a class="text-zinc-500 transition-colors duration-500 hover:text-black font-normal text-xl" href="#deals">Deals</a></li>
-          <li><a class="text-zinc-500 transition-colors duration-500 hover:text-black font-normal text-xl" href="#success">Success</a></li>
-          <li><a class="text-zinc-500 transition-colors duration-500 hover:text-black font-normal text-xl" href="#about">About</a></li>
-          <li><a class="text-zinc-500 transition-colors duration-500 hover:text-black font-normal text-xl" href="#register">Register</a></li>
-        </ul>
-        <i class="fa-solid fa-bars text-3xl lg:hidden lg:order-none"></i>
+      <nav class="bg-white px-2 sm:px-4 py-2.5 w-full">
+        <div class="container flex flex-wrap lg:flex-nowrap items-center justify-between mx-auto">
+          <a href="https://flowbite.com/" class="flex items-center">
+              <span class="self-center font-semibold text-3xl sm:text-4xl text-zinc-700 whitespace-nowrap">ProLearner</span>
+          </a>
+          <div class="flex lg:order-2">
+            <a class="py-3 px-8 text-sky-500 border-2 border-sky-500 rounded-md font-semibold text-lg lg:text-xl hidden md:block" href="#register">Register</a>
+            <!-- toggle button -->
+            <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-black rounded-lg lg:hidden focus:outline-none" aria-controls="navbar-cta" aria-expanded="false">
+              <svg class="w-8 h-8" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </button>
+          </div>
+          <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-cta">
+            <ul class="flex flex-col p-4 mt-4 lg:flex-row lg:space-x-8 lg:mt-0 lg:text-sm lg:font-medium ">
+              <li>
+                <a class="font-normal text-base md:text-xl block py-2 pl-3 pr-4 hover:text-black transition-colors duration-200 lg:p-0" href="#home">Home</a>
+              </li>
+              <li>
+                <a class="font-normal text-base md:text-xl block py-2 pl-3 pr-4 hover:text-black transition-colors duration-200 lg:p-0 dark:text-gray-500" href="#courses">Courses</a>
+              </li>
+              <li>
+                <a class="font-normal text-base md:text-xl block py-2 pl-3 pr-4 hover:text-black transition-colors duration-200 lg:p-0 dark:text-gray-500" href="#deals">Deals</a>
+              </li>
+              <li>
+                <a class="font-normal text-base md:text-xl block py-2 pl-3 pr-4 hover:text-black transition-colors duration-200 lg:p-0 dark:text-gray-500" href="#success">Success</a>
+              </li>
+              <li>
+                <a class="font-normal text-base md:text-xl block py-2 pl-3 pr-4 hover:text-black transition-colors duration-200 lg:p-0 dark:text-gray-500" href="#about">About</a>
+              </li>
+              <li>
+                <a class="font-normal text-base md:text-xl block py-2 pl-3 pr-4 hover:text-black transition-colors duration-200 lg:p-0 dark:text-gray-500" href="#register">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <a class="py-3 px-8 text-sky-500 border-2 border-sky-500 rounded-md font-semibold text-lg lg:text-xl order-2 lg:order-none hidden sm:block" href="#register">Register</a>
     </section>
     <!-- nav section end -->
     
@@ -105,7 +128,6 @@
   </header>
 
   <main class="container mx-auto px-5 xl:px-0">
-
     <!-- Courses section start -->
     <section class="mb-8 md:mb-16 lg:mb-32" id="courses">
       <!-- courses header -->
@@ -207,7 +229,7 @@
 
 
     <!-- register section start -->
-    <section class="mb-8 md:mb-16 lg:mb-32">
+    <section class="mb-8 md:mb-16 lg:mb-32" id="register">
       <div class="bg-sky-500 flex lg:flex-row flex-col lg:text-start text-center items-center justify-between lg:py-20 md:py-14 py-8 md:px-24 px-4 rounded-md">
         <!-- register articles  -->
         <div class="lg:mb-0 md:mb-5 mb-4">
